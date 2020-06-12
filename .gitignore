@@ -1,0 +1,6 @@
+__pycache__
+coldrice/__pycache__
+coldrice/dl/__pycache__
+coldrice/ml/__pycache__
+coldrice/nas/__pycache__
+coldrice/nv/__pycache__
