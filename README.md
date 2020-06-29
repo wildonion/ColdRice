@@ -1,6 +1,6 @@
 # ColdRice
 
-ML & DL framework using **dask** for its parallel computing, **numpy** for its backend and **numba** for its jit compilation.
+ML & DL framework using **dask** for its parallel computing, **numpy** for its backend and **numba** for its JIT compilation.
 
 # Setup
 * Activate _coldrice_ environment: ```conda activate coldrice```
