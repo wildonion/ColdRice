@@ -3,9 +3,8 @@
 
 
 '''
-TODO : memory management/optimization , setting up cpu and gpu for graph tensors compilation and building in multi-threading/parallel manner using dask
-TODO : function args validation using type annotations in every single file
-TODO : https://github.com/wildonion/uniXerr/blob/master/references.txt
+References:
+	https://github.com/wildonion/uniXerr/blob/master/references.txt
 '''
 
 
