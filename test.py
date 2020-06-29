@@ -3,10 +3,9 @@
 
 
 '''
-TODO : implement the k-map problem [[ find the simplest algebraic statement for a given function ]]
-TODO : memory management/optimization , setting up cpu and gpu for graph tensors compilation and building in multi-threading/parallel manner
+TODO : memory management/optimization , setting up cpu and gpu for graph tensors compilation and building in multi-threading/parallel manner using dask
 TODO : function args validation using type annotations in every single file
-TODO (LINUX ONLY) : compile the ColdRice backend files written in JAX, Numba+Dask and Glow like dl folder using nuitka to import their .so files 
+TODO : https://github.com/wildonion/uniXerr/blob/master/references.txt
 '''
 
 
