@@ -1,13 +1,11 @@
-# ColdRice ___ [CLOSED]
+# ColdRice
 
-Compiled(mainly open source) ML & DL visualization and architecture search framework on top of JAX, Numba+Dask and Glow using Nuitka
+ML & DL framework using dask for its parallel computing, numpy for its backend and numba for its jit.
 
 # Setup
-> Download & install anaconda then use one the following command or its navigator to setup your workspace.
 * Activate _coldrice_ environment: ```conda activate coldrice```
-* Export your active environment to _coldrice.yml_ file: ```conda env export > coldrice.yml```
+* Export your active environment to _coldrice.yml_ file: ```conda env export | grep -v "^prefix: " > coldrice.yml```
 * Update the environment using the _coldrice.yml_ file: ```conda env update -f coldrice.yml --prune```
-###### see [conda docs](https://docs.conda.io/projects/conda/en/latest/index.html) to have more management.
 
 # Slides
 
@@ -18,3 +16,8 @@ Compiled(mainly open source) ML & DL visualization and architecture search frame
 # Experiences
 
 Four main [branches](https://drive.google.com/drive/folders/1vNTdWOWXI3MetTYlIxnxDuWRK6M5VGZH?usp=sharing) of computer science. Contact me if you want to access the drive.
+
+# TODOs
+* Add ML Toolkit
+* Visualization
+* Architecture Search
