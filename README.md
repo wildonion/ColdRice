@@ -9,6 +9,7 @@ ML & DL framework using **dask** for its parallel computing, **numpy** for its b
 * Update the environment using the _coldrice.yml_ file: ```conda env update -f coldrice.yml --prune```
 
 # TODOs
+* Computational Graph for Gradient Descent
 * Add ML Toolkit
 * Visualization
 * Architecture Search
