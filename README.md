@@ -21,3 +21,4 @@ Four main [branches](https://drive.google.com/drive/folders/1vNTdWOWXI3MetTYlIxn
 * Add ML Toolkit
 * Visualization
 * Architecture Search
+* CUDA Support
