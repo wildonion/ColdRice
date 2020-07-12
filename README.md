@@ -22,3 +22,4 @@ $ pip install coldrice
 * Visualization
 * Architecture Search
 * CUDA Support
+* Complete Production Usage Guide
