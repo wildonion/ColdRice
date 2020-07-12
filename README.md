@@ -2,7 +2,7 @@
 
 ML & DL framework using **dask** for its parallel computing, **numpy** & **jax** for its backend and **numba** for its JIT and CUDA support.
 
-# Setup
+# Development Setup
 * Create the environment with the latest version of python: ```conda create -n coldrice python=3```
 * Activate _coldrice_ environment: ```conda activate coldrice```
 * Update the environment using the _coldrice.yml_ file: ```conda env update -f coldrice.yml --prune```
@@ -10,6 +10,11 @@ ML & DL framework using **dask** for its parallel computing, **numpy** & **jax**
 
 ###### :warning: You can't create an environment if the environment was exported on a different platform than the target machine.
 ###### :information_source: `coldrice.yml` was exported on Linux.
+
+# Production Usage
+```console 
+$ pip install coldrice
+```
 
 # TODOs
 * Computational Graph for Gradient Descent
