@@ -1,6 +1,6 @@
 # ColdRice
 
-ML & DL framework using **dask** for its parallel computing, **numpy** & **jax** for its backend and **numba** for its JIT and CUDA support.
+ML & DL framework using **dask** for its parallel computing, **numpy**, **eagerpy** & **jax** for its backend and **numba** for its JIT and CUDA support.
 
 # Development Setup
 * Create the environment with the latest version of python: ```conda create -n coldrice python=3```
