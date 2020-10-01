@@ -123,7 +123,7 @@
 '''
 
 
-from coldrice.dl.nn import NeuralNetworks
+from .nn import NeuralNetworks
 import numpy as np
 
 
@@ -142,14 +142,14 @@ class Dense(NeuralNetworks):
 
 	def __init__(self, hidden_neurons, input_neurons=None, activation=None, use_bias=True):
 		super(Dense, self).__init__()
-		self.input_neurons = input_neurons # features
-		self.hidden = hidden_neurons # features for next layer
-		self.activation = activation
-		self.use_bias = use_bias
-		self.weights = None
+		self.input_neurons 	= input_neurons # features
+		self.hidden 		= hidden_neurons # features for next layer
+		self.activation 	= activation
+		self.use_bias       = use_bias
+		self.weights 		= None
 		self.neural_circuit = None
-		self.biases = None
-		self.delta = None # backpropagation formula
+		self.biases 		= None
+		self.delta 			= None # backpropagation formula
 
 
 class LSTM(NeuralNetworks):
@@ -161,12 +161,11 @@ class LSTM(NeuralNetworks):
 	__slots__ = ['weights', 'units', 'biases', 'neural_circuit']
 
 	def __init__(self):
-		self.weights = None
-		self.units = units
-		self.biases = None
+		self.weights 		= None
+		self.units 			= units
+		self.biases 		= None
 		self.neural_circuit = None
-		self.delta = None
-		self.delta = None # backpropagation formula
+		self.delta 			= None # backpropagation formula
 
 class GRU(NeuralNetworks):
 
@@ -177,29 +176,25 @@ class GRU(NeuralNetworks):
 	__slots__ = ['weights', 'biases', 'neural_circuit']
 
 	def __init__(self):
-		self.weights = None
-		self.biases = None
+		self.weights 		= None
+		self.biases 		= None
 		self.neural_circuit = None
-		self.delta = None
-		self.delta = None # backpropagation formula
+		self.delta 			= None # backpropagation formula
 
 
 class RNN(NeuralNetworks):
 
 	'''
 		recurrent neural network
-		
-		sources:
-			https://www.youtube.com/watch?v=SEnXr6v2ifU
 	'''
 
 	__slots__ = ['weights', 'biases', 'neural_circuit']
 
 	def __init__(self):
-		self.weights = None
-		self.biases = None
+		self.weights 		= None
+		self.biases  		= None
 		self.neural_circuit = None
-		self.delta = None # backpropagation formula
+		self.delta 			= None # backpropagation formula
 
 
 class Conv2D(NeuralNetworks):
@@ -210,15 +205,15 @@ class Conv2D(NeuralNetworks):
 	__slots__ = ['filters', 'kernel', 'stride', 'padding', 'activation', 'weights', 'biases', 'neural_circuit']
 
 	def __init__(self, filters, kernel, stride, padding, activation):
-		self.filters = filters
-		self.kernel = kernel
-		self.stride = stride
-		self.padding = padding
-		self.activation = activation
-		self.weights = None
-		self.biases = None
+		self.filters 		= filters
+		self.kernel 		= kernel
+		self.stride 		= stride
+		self.padding 		= padding
+		self.activation 	= activation
+		self.weights 		= None
+		self.biases 		= None
 		self.neural_circuit = None
-		self.delta = None # backpropagation formula
+		self.delta 			= None # backpropagation formula
 
 
 class Conv2DTranspose(NeuralNetworks):
@@ -229,15 +224,15 @@ class Conv2DTranspose(NeuralNetworks):
 	__slots__ = ['filters', 'kernel', 'stride', 'padding', 'activation', 'weights', 'biases', 'neural_circuit']
 
 	def __init__(self, filters, kernel, stride, padding, activation):
-		self.filters = filters
-		self.kernel = kernel
-		self.stride = stride
-		self.padding = padding
-		self.activation = activation
-		self.weights = None
-		self.biases = None
+		self.filters 		= filters
+		self.kernel 		= kernel
+		self.stride 		= stride
+		self.padding 		= padding
+		self.activation 	= activation
+		self.weights 		= None
+		self.biases 		= None
 		self.neural_circuit = None
-		self.delta = None # backpropagation formula
+		self.delta 			= None # backpropagation formula
 
 		
 
@@ -246,20 +241,20 @@ class Dropout(NeuralNetworks):
 	__slots__ = ['weights', 'biases', 'neural_circuit']
 
 	def __init__(self):
-		self.weights = None
-		self.biases = None
+		self.weights 		= None
+		self.biases 		= None
 		self.neural_circuit = None
-		self.delta = None # backpropagation formula
+		self.delta 			= None # backpropagation formula
 
 class Flatten(NeuralNetworks):
 
 	__slots__ = ['weights', 'biases', 'neural_circuit']
 
 	def __init__(self):
-		self.weights = None
-		self.biases = None
+		self.weights 		= None
+		self.biases 		= None
 		self.neural_circuit = None
-		self.delta = None # backpropagation formula
+		self.delta 			= None # backpropagation formula
 
 
 class MaxPooling2D(NeuralNetworks):
@@ -267,7 +262,7 @@ class MaxPooling2D(NeuralNetworks):
 	__slots__ = ['weights', 'biases', 'neural_circuit']
 
 	def __init__(self):
-		self.weights = None
-		self.biases = None
+		self.weights 		= None
+		self.biases 		= None
 		self.neural_circuit = None
-		self.delta = None # backpropagation formula
+		self.delta 			= None # backpropagation formula
