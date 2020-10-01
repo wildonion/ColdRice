@@ -12,7 +12,7 @@
 '''
 
 
-from coldrice.dl.nn import NeuralNetworks
+from .nn import NeuralNetworks
 
 
 # ----------------------------------------------
