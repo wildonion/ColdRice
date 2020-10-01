@@ -12,11 +12,11 @@
 '''
 
 
-from coldrice.dl.layers import *
-from coldrice.dl.optimizers import *
+from .layers import *
+from .optimizers import *
 import numpy as np
 # import matplotlib.pyplot as plt
-from coldrice.dl.nn import *
+from .nn import *
 from collections import namedtuple
 
 
