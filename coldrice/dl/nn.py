@@ -14,7 +14,7 @@
 
 
 import numpy as np
-from coldrice.dl.activations import *
+from .activations import *
 from collections import namedtuple
 
 # ----------------------------------------------
@@ -83,8 +83,39 @@ class NeuralNetworks():
 				for l in range(len(model['layers'])):
 					if str(model['layers'][l].__class__.__name__) == 'Dense':
 						z = np.dot(x_train[index], model['layers'][l].weights) # ((batches , input_neurons) X (input_neurons , hidden_neurons) = (batches , hidden_neurons)) 
-						# step 1) : pass z through an activation function based on l.activation ; if l.activation is None use a linear one !
-						# step 2) : o = model['layers'][l].activation(z + model['layers'][l].biases)
+						if model['layers'][l].activation.__class__.__name__ == 'relu':
+							model['layers'][l].activation = relu()
+							o = model['layers'][l].activation(z + model['layers'][l].biases) 
+						elif model['layers'][l].activation.__class__.__name__ == 'elu':
+							model['layers'][l].activation = elu()
+							o = model['layers'][l].activation(z + model['layers'][l].biases)
+						elif model['layers'][l].activation.__class__.__name__ == 'sigmoid':
+							model['layers'][l].activation = sigmoid()
+							o = model['layers'][l].activation(z + model['layers'][l].biases)
+						elif model['layers'][l].activation.__class__.__name__ == 'softmax':
+							model['layers'][l].activation = softmax()
+							o = model['layers'][l].activation(z + model['layers'][l].biases)
+						elif model['layers'][l].activation.__class__.__name__ == 'selu':
+							model['layers'][l].activation = selu()
+							o = model['layers'][l].activation(z + model['layers'][l].biases)
+						elif model['layers'][l].activation.__class__.__name__ == 'softplus':
+							model['layers'][l].activation = softplus()
+							o = model['layers'][l].activation(z + model['layers'][l].biases)
+						elif model['layers'][l].activation.__class__.__name__ == 'softsign':
+							model['layers'][l].activation = softsign()
+							o = model['layers'][l].activation(z + model['layers'][l].biases)
+						elif model['layers'][l].activation.__class__.__name__ == 'tanh':
+							model['layers'][l].activation = tanh()
+							o = model['layers'][l].activation(z + model['layers'][l].biases)
+						elif model['layers'][l].activation.__class__.__name__ == 'hardsigmoid':
+							model['layers'][l].activation = hardsigmoid()
+							o = model['layers'][l].activation(z + model['layers'][l].biases)
+						elif model['layers'][l].activation.__class__.__name__ == 'exponential':
+							model['layers'][l].activation = exponential()
+							o = model['layers'][l].activation(z + model['layers'][l].biases)
+						elif model['layers'][l].activation == None:
+							model['layers'][l].activation = linear()
+							o = model['layers'][l].activation(z + model['layers'][l].biases)
 						model['layers'][l].neural_circuit = o
 						self.__multilayerperceptron[model].append(o)
 					elif str(model['layers'][l].__class__.__name__) == 'Conv2D':
