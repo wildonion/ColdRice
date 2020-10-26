@@ -23,4 +23,4 @@ $ pip install coldrice
 * Visualization
 * Architecture Search
 * CUDA Support
-* Complete Production Usage Guide
+* Complete Production Usage Guide(Docker Setup)
