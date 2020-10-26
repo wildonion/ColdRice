@@ -59,6 +59,8 @@ TODO: implement DQN improvement algorithms and RL algos on MDP based env(DQN.pdf
 TODO: pygame|arcade|tkinter|openAIgym , CNN VGG and opencv , GAN , SL/USL , DCGAN , DRL(DQN(DNN,DQL)|ES|PPO|DN|GA) , RNNLM , NLP(NLU) , RNN(LSTM)
 TODO: IBPS app >> increase the beat of the given song by moving the time using RL eg: 3 beats increase per 30 secs
 TODO: an async version of neural networks like each neuron is a Future object(Dart-lang)
+TODO: build a a DBMS on top of ai using RL
+TODO: generate quran verses using NLP tasks
 
 
 
