@@ -9,12 +9,13 @@ References:
 	https://realpython.com/python-type-checking/
 '''
 
-
+from collections import namedtuple
 import numpy as np
 from coldrice.dl.models import Rice
 from coldrice.dl.models import Sequential
 from coldrice.dl.layers import Dense, Conv2D, LSTM
 from coldrice.dl.optimizers import gd
+
 
 
 
