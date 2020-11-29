@@ -132,10 +132,7 @@ class NeuralNetworks():
 						pass
 					else:
 						pass
-				pass
-			# yield whole info of each iteration and epoch like loss and accuracy value in a tuple
-			# call self._backpropagation(output, x_train, y_train, optimizer_name) to update the weights at the end of each epoch
-			# TODO : update weights based on model['configs'].optimizer.__class__.__name__ ===> GD , SGD , BGD
+				self._backpropagation(model['layers'][l].neural_circuit, x_train, y_train, model['configs'].optimizer.__class__.__name__)
 		
 
 	def __backpropagation(self, output, x_train, y_train, optimizer_name):
@@ -143,23 +140,5 @@ class NeuralNetworks():
 			train the model by calculating 
 			the derivation of each layer 
 			using computational graph and jax
-
-			𝚫ᴸ = (Aᴸ - Y) * dZᴸ ..... last layer
-			𝚫ⁱ = (𝚫ⁱ⁺¹ . W ᵀ)* dZⁱ ..... other layers
-		
-			def backward(self, y, rightLayer):
-			    if self.isoutputLayer:
-			        error = self.A - y
-				self.delta = np.atleast_2d(error * self.dZ)
-			    else:
-				self.delta = np.atleast_2d(
-		                np.dot(rightLayer.delta, rightLayer.weight.T)* self.dZ)
-			    return self.delta
-
-		        def update(self, learning_rate, left_a):
-		            a = np.atleast_2d(left_a)
-		            d = np.atleast_2d(self.delta)
-			    ad = a.T.dot(d)
-			    self.weight -= learning_rate * ad
 		'''
 		pass
