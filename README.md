@@ -3,7 +3,7 @@
 ML & DL framework using **dask** for its parallel computing, **numpy**, **eagerpy** & **jax** for its backend and **numba** for its JIT and CUDA support.
 
 # Development Setup
-* Create an environment with the latest version of python: ```conda create -n coldrice python=3```
+* Create an environment: ```conda create -n coldrice```
 * Create the environment using the _coldrice.yml_ file: ```conda env create -f coldrice.yml```
 * Activate _coldrice_ environment: ```conda activate coldrice```
 * Update the environment using the _coldrice.yml_ file: ```conda env update -f coldrice.yml --prune```
