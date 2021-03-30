@@ -37,8 +37,12 @@ print(cr.get_weights())
 # ==============================
 @cr.build # build the graph 
 def model():
+    sizes = [5, 10, 15, 45, 100, 200, 250, 10]
+    weights = [(x, y) for x, y in zip(sizes[:-1], sizes[1:])]
+    # >>> [(5, 10), (10, 15), (15, 45), (45, 100), (100, 200), (200, 250), (250, 10)]
     network.mlp = layer1 = 23 <-> layer2 = 34 <-> output = 2
     network.conv2d = layer1 = mlp(36) <-> layer2 = [32, (1,1), 1, 'valid', 'relu']
+    network.rnn = layer1 = [64, 20, 1024] # 64 samples with 20 rows and 1024 columns (features) in each
 
 cr.compile(model()) # compile to protobuf
 cr.execute(model()) # execute the graph
