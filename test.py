@@ -36,6 +36,7 @@ print(cr.get_weights())
 # COLDRICE ABSTRACT SYNTAX
 # ==============================
 @cr.build # build the graph 
+# @cr.build_compile # build and compile the graph
 def model():
     sizes = [5, 10, 15, 45, 100, 200, 250, 10]
     weights = [(x, y) for x, y in zip(sizes[:-1], sizes[1:])]
