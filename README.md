@@ -24,4 +24,3 @@ $ pip install coldrice
 * Architecture Search
 * CUDA Support
 * Complete Production Usage Guide(Docker Setup)
-* Rebuild it in Rust
